@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen"/>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'header'>
+            <h2>John Conway's</h2>
+            <h1>Game of Life</h1>
+            <p id = 'res'></p>
+        </div>
+        <div class = 'main-content'>
+            <canvas width="1200" height="800"id = "canvas"></canvas>
+            <button id ="btn"> Start </button>
+            <select id = "pattern">
+                <option value ="select" selected="true" disabled="true">Select a pattern</option>
+                <option value ="clearGrid">None</option>
+                <option value ="glider">Glider</option>
+                <option value ="LWS">Lightweight Spaceship</option>
+                <option value ="nature">Puffer 1</option>
+                <option value ="gliderGun">Glider Gun</option>
+                <option value ="centinal">Centinal</option>
+            </select>
+        </div>
+        <div class = 'footer' >
+            Ezekiel Vipinosa
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src = "patterns.js">
+    </script>
+    <script type="text/javascript" src = "gol_scripts.js">
+    </script>
+</html>
